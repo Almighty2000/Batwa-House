@@ -12,3 +12,6 @@ Independent guest-checkout ecommerce store with admin, D1 database and photo upl
 For local QA: `npm ci`, `npm run build`, `npx wrangler d1 migrations apply DB --local`, `npm run preview`.
 
 D1 storage has free-tier quotas. Database image storage suits a small catalogue; resize/compress images before uploading. No paid services are enabled by this repository.
+
+## Verification completed
+Standalone production build, TypeScript, and local D1 migrations passed. Local API smoke checks passed: guest order total, retry idempotency, stock deduction, cancellation restoration exactly once, admin authorization, private guest order history, and rejection of forged Sites identity headers. Live Cloudflare deployment and photo uploads still require verification in the target account.
