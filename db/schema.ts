@@ -7,3 +7,5 @@ export const catalogDetails=sqliteTable('catalog_details',{id:text('id').primary
 export const orderDetails=sqliteTable('order_details',{id:text('id').primaryKey(),data:text('data').notNull()});
 export const storeSettings=sqliteTable('store_settings',{id:text('id').primaryKey(),data:text('data').notNull()});
 export const auditLog=sqliteTable('audit_log',{id:text('id').primaryKey(),action:text('action').notNull(),target:text('target').notNull(),created:text('created').notNull()});
+
+export const media=sqliteTable('media',{id:text('id').primaryKey(),type:text('type').notNull(),data:text('data').notNull()});
